@@ -21,8 +21,6 @@ int main(int argc, char *argv[])
 		for(int j = 0; j < COLS; j++)
 			map[i][j] = (i % 2 && j % 2 ? 0 : 1);
 
-	const int total_cells = CELL_X * CELL_Y;
-
 	srand(time(NULL));
 	build(0, 0, CELL_X, CELL_Y);
 
